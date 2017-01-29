@@ -1,0 +1,8 @@
+---
+applications:
+- name: ecp-starter-kit
+  host: ecp-starter-kit
+  domain: mybluemix.net
+  memory: 256M
+  instances: 1
+  buildpack: nodejs_buildpack

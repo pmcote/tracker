@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ global.title }} | {{ page.title }}</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="normalize.css">
+  <link href="/styles/normalize.css" rel="stylesheet">
+  <link href="/styles/master.css" rel="stylesheet">
+  <script src="/scripts/master.js"></script>
+  {% block head %}{% endblock %}
+</head>
+<body>
+{% block body %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,79 @@
+
+@import "../../../node_modules/ibm-design-colors/_ibm-colors.scss";
+// https://github.com/IBM-Design/colors
+// https://www.ibm.com/design/language/resources/color-library/
+
+html{
+  box-sizing: border-box;
+}
+*{
+  box-sizing: inherit;
+}
+
+
+body{
+  font-family: 'IBM Helvetica', Helvetica Neue, HelveticaNeue, Helvetica, sans-serif;
+  background-color: color('neutral-white', 2);
+  color: color('blue', 80);
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.5), 
+    rgba(255, 255, 255, 0.2)
+  ), 
+  url(../img/rainbo1.jpeg) center center fixed;
+  background-size: cover;
+}
+
+textarea {
+  outline: none;
+  overflow: auto;
+  border: none;
+  resize: none;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  flex-basis: 35%;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  position: relative;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+}
+
+.input:before, .input:after {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+  top:50%;
+  bottom:0;
+  left:10px;
+  right:10px;
+  -moz-border-radius:100px / 10px;
+  border-radius:100px / 10px;
+}
+
+.input:after {
+  right:10px;
+  left:auto;
+  -webkit-transform:skew(8deg) rotate(3deg);
+     -moz-transform:skew(8deg) rotate(3deg);
+      -ms-transform:skew(8deg) rotate(3deg);
+       -o-transform:skew(8deg) rotate(3deg);
+          transform:skew(8deg) rotate(3deg);
+}
+
+.feels {
+
+}
